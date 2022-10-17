@@ -17,8 +17,6 @@ for i in range(rnum):
         if i>0 and j>0 and i<rnum-1 and j<cnum-1:
             if numbers[i][j]==1 and numbers[i-1][j]==1 and numbers[i+1][j]==1 and numbers[i][j+1]==1 and numbers[i][j-1]==1:
                 crosscount+=1;
-                if numbers[i][j]==1 and numbers[i][j+1]==1 and numbers[i][j-1]==1 and numbers[i+1][j]==1 and numbers[i+1][j-1]==1 and numbers[i+1][j+1]==1:
-                    crosscount-=1;
     
 print(crosscount)
 # ******************************
